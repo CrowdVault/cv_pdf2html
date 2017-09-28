@@ -24,10 +24,10 @@ class Common(object):
     GENERATING_MODE = bool(os.environ.get('P2H_TEST_GEN'))
 
     # temporary directories defined in CMakeLists.txt:
-    TMPDIR = "@PDF2HTMLEX_TMPDIR@"
-    PNGDIR = "@PDF2HTMLEX_PNGDIR@"
-    DATDIR = "@PDF2HTMLEX_DATDIR@"
-    OUTDIR = "@PDF2HTMLEX_OUTDIR@"
+    TMPDIR = "/tmp/pdf2htmlEX/tmp"
+    PNGDIR = "/tmp/pdf2htmlEX/png"
+    DATDIR = "/tmp/pdf2htmlEX/dat"
+    OUTDIR = "/tmp/pdf2htmlEX/out"
 
     def setUp(self):
         # filter manifest
